@@ -105,7 +105,23 @@ Penjelasan output:
 
     
 6. Ubahlah ijin akses file dataku pada sub direktori maret sehingga semua dapat 
-melakukan write, read dan execute. 
+melakukan write, read dan execute.
+
+   <img widthy="500" alt="Screenshot from 2024-09-11 06-46-59" src="https://github.com/user-attachments/assets/38a0ec5a-7060-4723-a34e-89a33e75f3fe">
+
+Penjelasan:
+
+    chmod 777:
+        -  7 untuk user: read (r), write (w), execute (x).
+        -  7 untuk group: read (r), write (w), execute (x).
+        -  7 untuk others: read (r), write (w), execute (x).
+Penjelasan output:
+
+    rwxrwxrwx:
+        -  User (owner) memiliki izin read, write, dan execute (rwx).
+        -  Group memiliki izin read, write, dan execute (rwx).
+        -  Others juga memiliki izin read, write, dan execute (rwx).
+        
 7. Hapuslah direktori maret. 
 8. Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat 
 melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori 
