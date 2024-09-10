@@ -69,7 +69,6 @@ Penjelasan:
     -  2 (write-only) untuk others.
 
 Setelah perintah ini dijalankan:
-
     -  Owner (user) dapat membaca dan menulis.
     -  Group dapat membaca dan menulis.
     -  Others hanya bisa menulis (tidak bisa membaca).
@@ -87,6 +86,24 @@ Penjelasan output:
 5. Ubahlah ijin akses file dataku pada sub direktori pebruari sehingga user dapat 
 melakukan baik write, read maupun execute, tetapi group dan others hanya bisa read 
 dan execute. 
+
+  <img widthy="500" alt="Screenshot from 2024-09-11 06-37-09" src="https://github.com/user-attachments/assets/ce6c7981-4b7c-4632-be89-1343a4fef729">
+
+Penjelasan:
+
+    chmod 754:
+        -  7 (read, write, execute) untuk user (owner).
+        -  5 (read, execute) untuk group.
+        -  4 (read-only) untuk others.
+
+Penjelasan output:
+
+    rwxr-xr--:
+        -  User (owner) memiliki izin read, write, dan execute (rwx).
+        -  Group memiliki izin read dan execute (r-x), tetapi tidak bisa menulis.
+        -  Others hanya bisa membaca dan mengeksekusi (r--), tetapi tidak bisa menulis.
+
+    
 6. Ubahlah ijin akses file dataku pada sub direktori maret sehingga semua dapat 
 melakukan write, read dan execute. 
 7. Hapuslah direktori maret. 
