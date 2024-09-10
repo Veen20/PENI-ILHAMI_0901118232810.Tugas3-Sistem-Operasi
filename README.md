@@ -58,6 +58,32 @@ dan copy-kan file tersebut ke sub direktori februari dan maret.
 
 4. Ubahlah ijin akses file dataku pada sub direktori januari sehingga group dan others 
 dapat melakukan write. 
+
+  <img widthy="500" alt="Screenshot from 2024-09-11 06-26-10" src="https://github.com/user-attachments/assets/41825eeb-098a-4e8a-bfd9-0157da558af0">
+
+Penjelasan:
+
+    chmod 662:
+    -  6 (read + write) untuk owner.
+    -  6 (read + write) untuk group.
+    -  2 (write-only) untuk others.
+
+Setelah perintah ini dijalankan:
+
+    -  Owner (user) dapat membaca dan menulis.
+    -  Group dapat membaca dan menulis.
+    -  Others hanya bisa menulis (tidak bisa membaca).
+
+  <img widthy="500" alt="Screenshot from 2024-09-11 06-27-40" src="https://github.com/user-attachments/assets/401fad34-d27c-41a8-861a-b2428e920010">
+
+Mengecek izin akses apakah sudah berubah dengan benar
+Penjelasan output:
+
+    rw-rw--w-:
+        -  Owner (peni-ilhami) memiliki izin read dan write (rw-).
+        -  Group memiliki izin read dan write (rw-).
+        -  Others hanya memiliki izin write (-w-), tidak bisa membaca.
+
 5. Ubahlah ijin akses file dataku pada sub direktori pebruari sehingga user dapat 
 melakukan baik write, read maupun execute, tetapi group dan others hanya bisa read 
 dan execute. 
