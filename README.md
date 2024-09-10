@@ -123,6 +123,13 @@ Penjelasan output:
         -  Others juga memiliki izin read, write, dan execute (rwx).
         
 7. Hapuslah direktori maret. 
+
+  <img widthy="500" alt="Screenshot from 2024-09-11 06-52-09" src="https://github.com/user-attachments/assets/af411e48-10cc-4394-98fd-d14c2ef1ab64">
+
+  <img widthy="500" alt="Screenshot from 2024-09-11 06-52-49" src="https://github.com/user-attachments/assets/b5af087f-db49-43ce-bf1b-256f09d7d682">
+
+rm -r: Menghapus direktori dan semua isinya secara rekursif (termasuk file dan subdirektori di dalamnya).
+
 8. Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat 
 melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori 
 februari.
