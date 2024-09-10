@@ -50,7 +50,7 @@ dan copy-kan file tersebut ke sub direktori februari dan maret.
 
   Penjelasan:
   - echo -e mencetak string dengan interpretasi karakter escape (misalnya \n untuk baris baru).
-  - > mengalihkan output dari perintah echo ke file januari/dataku.txt, membuat file baru atau menimpa file yang ada.
+  - (> mengalihkan output dari perintah echo ke file januari/dataku.txt, membuat file baru atau menimpa file yang ada.)
   - cp adalah perintah untuk menyalin file.
   - januari/dataku.txt adalah file sumber.
   - februari/ dan maret/ adalah direktori tujuan.
