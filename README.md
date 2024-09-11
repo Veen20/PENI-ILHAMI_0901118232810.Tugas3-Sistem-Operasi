@@ -2,6 +2,14 @@
   <div align="center">
 
 ## Tugas Praktikum 3 Sistem File (File System)
+
+*Dosen Pengampu:*\
+Ahmad Heryanto, M. T.\
+Adi Hermansyah, M. T.\
+Sutarno, M.T.\
+Iman Saladin B. Azhar, S. Kom., M. M.SI.\
+Dr. Ahmad Zarkarsi, M. T.
+
 <img src="https://github.com/user-attachments/assets/b086809c-d41c-4331-a4f6-93500d076a9c" alt="Alt Text" width="400">
 
 <br>
@@ -20,8 +28,11 @@ KELAS       : SK3B
 *UNIVERSITAS SRIWIJAYA*  
 *2024*
 <br>
+<br>
 
-### Langkah-Langkah
+</div>
+
+### TUGAS
 
 <div align="justify">
 
@@ -133,8 +144,47 @@ rm -r: Menghapus direktori dan semua isinya secara rekursif (termasuk file dan s
 8. Ubahkan kepemilikan sub direktori februari sehingga user dan group hanya dapat 
 melakukan read, dan cobalah untuk membuat direktori baru haha pada sub direktori 
 februari.
+
+ <img widthy="500" alt="Screenshot from 2024-09-11 07-01-18" src="https://github.com/user-attachments/assets/8a67c18a-19cc-40b9-a884-bd808201d007">
+
+Penjelasan :
+-  5 untuk user (read dan execute, tanpa write).
+-  4 untuk group (hanya read, tanpa execute dan write).
+-  4 untuk others (hanya read, tanpa execute dan write).
+
+    <img widthy="500" alt="Screenshot from 2024-09-11 07-05-45" src="https://github.com/user-attachments/assets/ee286d0e-b1e3-496a-9875-928a23f38253">
+
+Penjelasan output:
+
+    dr-xr--r--:
+        -  User (owner) hanya bisa membaca dan mengeksekusi.
+        -   roup hanya bisa membaca.
+        -  Others hanya bisa membaca.
+
+   <img widthy="500" alt="Screenshot from 2024-09-11 07-10-06" src="https://github.com/user-attachments/assets/0ea39b8b-44a3-411e-ac16-1539136b837f">
+
+   Pesan ini menunjukkan bahwa perubahan izin akses sudah berhasil, dan baik user maupun group tidak dapat membuat (menulis) direktori atau file baru di dalam subdirektori
+   Februari.
+
+
 9. Modifikasi umask dari file dataku pada sub direktori januari menjadi 027 dan berapakan 
 nilai default-nya ? 
+
+<img widthy="500" alt="Screenshot from 2024-09-11 07-25-52" src="https://github.com/user-attachments/assets/c709dded-91f9-471f-9219-222ce4e2142f">
+  
+  Penjelasan027 berarti:
+  
+    -  User akan memiliki izin penuh (read, write, execute).
+    -  Group hanya memiliki izin read dan execute (tidak bisa menulis).
+    -  Others tidak memiliki izin apapun (tidak bisa membaca, menulis, atau mengeksekusi).
+    -  Hasilnya akan menunjukkan umask saat ini, yang seharusnya 0027
+
 10. Buatlah link dari file dataku ke file dataku.ini dan file dataku.juga dan dengan perintah 
 list perhatikan berapa link yang terjadi ?
 
+ <img widthy="500" alt="Screenshot from 2024-09-11 07-39-09" src="https://github.com/user-attachments/assets/905ec8e9-3d33-48d2-8b88-54065490f803">
+
+Penjelasan:
+
+    -  Angka 3 sebelum nama pengguna (peni-ilhami) menunjukkan bahwa file Dataku, Dataku.ini, dan Dataku.juga memiliki tiga hard link yang menunjuk ke file yang sama.
+    -  Jadi, setiap perubahan yang dilakukan pada salah satu file akan berlaku untuk semuanya karena mereka berbagi inode yang sama.
